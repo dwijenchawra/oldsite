@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+}
+h1 {
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 56px;
+}
+body {
+    height: 100%;
+    background-image: linear-gradient(#00f5e9, #105a5a);
+    margin: 0%;
+}
+header-box {
+    margin: auto;
+    
+}
+
+ul {
+    background-color: rgb(156, 159, 113);
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    padding: 0px;
+}
+a {
+    font-family: 'Varela Round', sans-serif;
+    display: block;
+    padding: 8px;
+    background-color: #FFFDD0;
+}
+a:hover {
+    background-color: rgb(212, 216, 150)
+}
