@@ -5,38 +5,75 @@ body {
     overflow: auto;
 }
 h1 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    color: black;
+    font-size: 3em;
+}
+nav {
+    width: 100%;
+    height: 3em; 
+    position: fixed; 
+    background-image: linear-gradient(to top left, #38b6e7, #10daf5);
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    margin: inherit;
+    box-shadow: 0 1px 10px rgb(170, 170, 170)
+}
+
+nav ul {
+    padding: 0.75em;
+    margin: auto auto;
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    padding: 0.75em;
+    color: white    ;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.7s cubic-bezier(0.38, 0.46, 0.01, 1.02);
+}
+nav ul li a:hover {
+    color: rgb(0, 60, 255);
+}
+.inner {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    padding-top: 4em;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.name {
+    font-family: 'Signika Negative', sans-serif;
     color: black;
     text-align: center;
-    font-size: 56px;
+    position: relative;
+    padding-top: 20%;
+    max-width: 100%;
+    width: inherit;
+    text-align: left;
+}
+.about-me {
+    padding-top: 10%;
+    font-family: 'Signika Negative', sans-serif;
+    color: black;
+    position: relative;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 body {
     height: 100%;
-    background-image: linear-gradient(#00f5e9, #105a5a);
-    margin: 0%;
-}
-header-box {
-    margin: auto;
-    
+    background: white;
 }
 
-ul {
-    background-color: rgb(255, 255, 255);
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-}
-li {
-    float: left;
-    padding: 0px;
-}
-a {
-    font-family: 'Varela Round', sans-serif;
-    display: block;
-    padding: 8px;
-    background-color: rgb(255, 255, 255);
-}
-a:hover {
-    background-color: rgb(221, 221, 221)
-}
+
