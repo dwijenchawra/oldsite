@@ -87,23 +87,27 @@ nav ul li a:hover {
     margin-left: 17.5%;
     margin-right: 17.5%;
     height: 100%;
-    padding-top: 4em;
+    padding-top: 7em;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 5%;
     color: rgb(77, 77, 77);
 }
-
+.pic {
+    width: 30%;
+    height: 30%;
+    border-radius: 1em;
+}
 .name {
     text-align: center;
     position: relative;
-    padding-top: 30%;
+    padding-top: 7.5%;
     max-width: 100%;
     width: inherit;
     text-align: left;
 }
 .about-me {
-    padding-top: 2.5%;
+    padding-top: 1%;
     position: relative;
 }   
 .flex-container {
