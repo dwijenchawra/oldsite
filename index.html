@@ -11,16 +11,16 @@
         <div class="nav-bar">
             <nav>
                 <ul>
-                    <li><a href="#name">About</a></li>
-                    <li><a href="#skillstitle">Skills</a></li>
-                    <li><a href="#achievementstitle">Achievements</a></li>
-                    <li><a href="#contactme">Contact Me</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
         <div>
             <div class="inner flex-container">
-                <div id="name" class="name">
+                <div id="about" class="name">
                     <h1>Dwijen Chawra</h1>
                 </div>
                 <div id="about-me" class="about-me">
@@ -28,7 +28,7 @@
                         fields of technology.
                     </h3>
                 </div>
-                <div id="skillstitle" class="skillstitle">
+                <div id="skills" class="skillstitle">
                     <h2>🛠️ My Skills</h2>
                     <div class="spacer"></div>
                     <h3>I am well-versed in Python and Java, and am currently learning Javascript and HTML/CSS.</h3>
@@ -63,16 +63,42 @@
                     <div class="child">Javascript</div>
                     <div class="description">tbd</div>
                 </div>
-                <div id="contactme" class="contact-info">
+                <svg width="0" height="0">
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#00e1ff" stop-opacity="1"/>
+                        <stop offset="100%" stop-color="#35b0e0" stop-opacity="1" />
+                    </linearGradient>
+                </svg>
+                <svg width="0" height="0">
+                    <linearGradient id="hovergradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#5cecff" stop-opacity="1"/>
+                        <stop offset="100%" stop-color="#76c1de" stop-opacity="1" />
+                    </linearGradient>
+                </svg>
+                <div id="contact" class="contact-info">
                     <div class="child">📞 Contact Me!</div>
                     <p class="contactinfo">I love meeting new people with similar interests! 
                         If you have any questions, feel free to reach out to me. You can contact me 
-                        by <a href="mailto:dwijenchawra@yahoo.com">email</a> or on any of my social medias.
+                        by <a class="maillink" href="mailto:dwijenchawra@yahoo.com">email</a> or on any of my social medias.
                     </p>
                     <div class="icons">
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-discord"></i>
-                        <i class="fas fa-envelope"></i>
+                        <ul>
+                            <li>
+                                <a href="https://www.github.com/dwijenchawra">
+                                    <i class="fa fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/dwijeee.c/">
+                                    <i class="fa fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:dwijenchawra@yahoo.com">
+                                    <i class="fa fas fa-envelope" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -88,8 +88,9 @@ nav ul li a:hover {
     margin-right: 17.5%;
     height: 100%;
     padding-top: 4em;
-    padding-left: 7.5%;
-    padding-right: 7.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
     color: rgb(77, 77, 77);
 }
 
@@ -123,13 +124,57 @@ nav ul li a:hover {
     padding-top: 5%;
 }
 .child {
-    padding-bottom: 1.5%;
+    padding-bottom: 0.5%;
+}
+.description {
+    font-size: 0.8em;
+    padding-bottom: 3%;
 }
 .contactinfo {
     font-size: 0.75em;
 }
 
+.icons ul {
+    list-style: none;
+    padding: 0;
+}
 
+.icons ul li {
+    display: inline-block;
+    padding-right: 3%;
+}
+
+.icons svg * {
+    fill: url(#gradient);
+    animation: unhovereffect 0.5s forwards;
+
+}
+.icons svg:hover * {
+    animation: hovereffect 0.5s forwards;
+}
+
+@keyframes hovereffect {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes unhovereffect {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.maillink:hover {
+    text-decoration: none;
+    color: linear-gradient(to top left, #35b0e0, #00e1ff);
+}
 /*
 .htmlcssbar, .javascriptbar, .javabar, .pythonbar {
     height: 1.5em;
