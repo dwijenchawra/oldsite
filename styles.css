@@ -114,9 +114,9 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
 }
-.skillstitle {
+.sectiontitle {
     padding-top: 10%;
-    margin-bottom: 5%;
+    padding-bottom: 5%;
 }
 .skills {
     font-family: 'Signika Negative', sans-serif;
@@ -133,6 +133,16 @@ nav ul li a:hover {
 .description {
     font-size: 0.8em;
     padding-bottom: 3%;
+}
+.achievements {
+    font-family: 'Signika Negative', sans-serif;
+}
+.achievementstitle {
+    padding-top: 10%;
+    padding-bottom: 1%;
+}
+.achievementsdata {
+    font-size: 1.75em;
 }
 .contactinfo {
     font-size: 0.75em;
