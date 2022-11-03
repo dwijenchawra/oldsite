@@ -6,7 +6,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -23,6 +23,8 @@
 </head>
 
 <body>
+
+
   <header class="site-header">
     <div class="site-header-title">
       <a>> dwijen.dev</a>
@@ -30,6 +32,58 @@
   
   </header>
   <div class="container">
+
+    <!-- grid example -->
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <div>
+          <h4 style="display: inline-block;">❯</h4>
+          <h4 id="blink" style="display: inline-block;"></h4>
+        </div>
+        <p>
+          I'm a software engineer based in the Bay Area. I'm currently working at <a href="https://www.uber.com">Uber</a> as a Software Engineer. I'm passionate about building great products and solving complex problems. I'm also a huge fan of open source and have contributed to a few projects.
+        </p>
+      </div>
+      <div class="one-half column">
+        <h4>Get in touch</h4>
+        <p>
+          <a href="mailto:dwchawra@gmail.com"></a>
+        </p>
+      </div>
+    </div>
+
+    <!-- create list of projects with pictures -->
+    <div class="row">
+      <div class="one-half column">
+        <h4>Projects</h4>
+        <ul>
+          <li>
+            <a href="a.com">Project 1</a>
+          </li>
+          <li>
+            <a href="b.com">Project 2</a>
+          </li>
+          <li>
+            <a href="c.com">Project 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="one-half column">
+        <h4>Skills</h4>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- add javascript animation to the next section about my education -->
+
 
     <!-- columns should be the immediate child of a .row -->
     <div class="row">
@@ -54,6 +108,37 @@
     </div>
 
   </div>
+
+  <script src="./js/WriteIt.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script>
+    // window.TypeItDefaults = {
+    //   strings: [],
+    //   speed: 100,
+    //   deleteSpeed: undefined,
+    //   lifeLike: true,
+    //   cursor: true,
+    //   cursorChar: "▋",
+    //   cursorSpeed: 1000,
+    //   breakLines: true,
+    //   startDelay: 250,
+    //   startDelete: false,
+    //   nextStringDelay: 750,
+    //   loop: false,
+    //   loopDelay: 750,
+    //   html: true,
+    //   autoStart: true,
+    //   callback: function() {}
+    // };
+    new TypeIt("#blink", {
+      strings: "Hi, I'm Dwijen ",
+      speed: 100,
+      cursorSpeed: 1500,
+      cursorChar: "▋",
+      loop: false,
+    }).go();
+  </script>
 </body>
 
 </html>
