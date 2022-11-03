@@ -1,2 +1,2 @@
-# dwijenchawra.github.io
+# dwijen.dev
 my personal website
