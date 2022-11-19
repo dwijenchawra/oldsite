@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/skeleton.css">
+  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
+  <style>
+    body {
+      background-color: #000;
+      color: rgb(0, 255, 0) !important;
+      font-size: 16pt;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header class="site-header">
+    <div class="site-header-title">
+      <a>> dwijen.dev</a>
+    </div>
+  
+  </header>
+  <div class="container">
+
+    <!-- grid example -->
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <div>
+          <h4 style="display: inline-block;">❯</h4>
+          <h4 id="blink" style="display: inline-block;"></h4>
+        </div>
+        <p>
+          I'm a freshman studying Computer Science at Purdue University.
+        </p>
+      </div>
+      <div class="one-half column">
+        <h4>Get in touch</h4>
+        <p>
+          <a href="mailto:dwchawra@gmail.com"></a>
+        </p>
+      </div>
+    </div>
+
+    <!-- create list of projects with pictures -->
+    <div class="row">
+      <div class="one-half column">
+        <h4>Projects</h4>
+        <ul>
+          <li>
+            <a href="project1.html">Project 1</a>
+          </li>
+          <li>
+            <a href="b.com">Project 2</a>
+          </li>
+          <li>
+            <a href="c.com">Project 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="one-half column">
+        <h4>Skills</h4>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- add javascript animation to the next section about my education -->
+
+
+    <!-- columns should be the immediate child of a .row -->
+    <div class="row">
+      <div class="one column">One</div>
+      <div class="eleven columns">Eleven</div>
+    </div>
+
+    <!-- just use a number and class 'column' or 'columns' -->
+    <div class="row">
+      <div class="two columns">Two</div>
+      <div class="ten columns">Ten</div>
+    </div>
+
+    <!-- there are a few shorthand columns widths as well -->
+    <div class="row">
+      <div class="one-third column">1/3</div>
+      <div class="two-thirds column">2/3</div>
+    </div>
+    <div class="row">
+      <div class="one-half column">1/2</div>
+      <div class="one-half column">1/2</div>
+    </div>
+
+  </div>
+
+  <script src="./js/WriteIt.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script>
+    // window.TypeItDefaults = {
+    //   strings: [],
+    //   speed: 100,
+    //   deleteSpeed: undefined,
+    //   lifeLike: true,
+    //   cursor: true,
+    //   cursorChar: "▋",
+    //   cursorSpeed: 1000,
+    //   breakLines: true,
+    //   startDelay: 250,
+    //   startDelete: false,
+    //   nextStringDelay: 750,
+    //   loop: false,
+    //   loopDelay: 750,
+    //   html: true,
+    //   autoStart: true,
+    //   callback: function() {}
+    // };
+    new TypeIt("#blink", {
+      strings: "Hi, I'm Dwijen ",
+      speed: 100,
+      cursorSpeed: 1500,
+      cursorChar: "▋",
+      loop: false,
+    }).go();
+  </script>
+</body>
+
+</html>
