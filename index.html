@@ -21,7 +21,22 @@
     }
 
     a {
-      
+      background-color: rgba(0, 255, 0, 0.496);
+      color: rgb(0, 255, 0) !important;
+    }
+
+    a:hover {
+      background-color: rgba(0, 255, 0, 0.496);
+      color: rgb(0, 0, 0) !important;
+    }
+
+    .roletitle {
+      margin-bottom: 1%;
+      margin-top: 2%;
+    }
+
+    .roledescription {
+      margin-left: 2%;
     }
     
   </style>
@@ -32,46 +47,51 @@
 
   <div class="container">
 
-    <div class="row">
-      <div class="column" style="margin-top: 25%">
-        <div>
+    <div id="header">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 15%">
           <h4 style="display: inline-block;">❯</h4>
           <h4 id="blink" style="display: inline-block;"></h4>
+
+          <p>
+            I'm a freshman studying Computer Science at Purdue University. My interests lie in Natural Language Processing and High Performance Computing. I'm currently working as a Student Researcher at the Center for Brain-Inspired Computing and a Student HPC Engineer at RCAC. 
+          </p>
         </div>
-        <p>
-          I'm a freshman studying Computer Science at Purdue University. 
-        </p>
+
+        <div class="one-half column" style="margin-top: 15%; text-align: center;">
+          <img src="./images/IMG_2294.jpeg" alt="me" style="width: 50%; height: 50%; align-self: end;">
+        </div>
       </div>
     </div>
 
-    <div style="margin-bottom: 20%;"></div>
+    <div style="margin-bottom: 10%;"></div>
 
     <div class="row">
       <div class="column">
         <h4>What I'm up to</h4>
         <ul>
           <li>
-            <h5 style="margin-bottom: 8pt;">Student Researcher - Center for Brain-Inspired Computing</h5>
-            <div style="margin-left: 8pt;">
+            <h5 class="roletitle">Student Researcher - Center for Brain-Inspired Computing</h5>
+            <div class="roledescription">
               
             </div>
           </li>
           <li>
-            <h5 style="margin-bottom: 8pt;">Student HPC Engineer</h5>
-            <div style="margin-left: 8pt;">
-              I currently work for <a href="https://rcac.purdue.edu">RCAC</a> at Purdue, where I built some of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi">Negishi</a> supercomputer
+            <h5 class="roletitle">Student HPC Engineer</h5>
+            <div class="roledescription">
+              I currently work for <a href="https://rcac.purdue.edu">RCAC</a> at Purdue, where I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi">Negishi</a> supercomputer.
             
             </div>
           </li>
           <li>
-            <h5 style="margin-bottom: 8pt;">Student Researcher - The Data Mine</h5>
-            <div style="margin-left: 8pt;">
-              Worked at Purdue for 3 months.
+            <h5 class="roletitle">Student Researcher - The Data Mine</h5>
+            <div class="roledescription">
+              I have been working with a group of students to compare different hyperparameter optimization techniques for LSTM neural networks. We have been using Pytorch and Ray Tune to scale training on the Anvil supercomputer.
             </div>
           </li>
           <li>
-            <h5 style="margin-bottom: 8pt;">RCAC</h5>
-            <div style="margin-left: 8pt;">
+            <h5 class="roletitle">RCAC</h5>
+            <div class="roledescription">
               Worked at Purdue for 3 months.
             </div>
           </li>
