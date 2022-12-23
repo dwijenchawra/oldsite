@@ -16,6 +16,10 @@
   <script src="https://kit.fontawesome.com/61eb020609.js" crossorigin="anonymous"></script>
 
   <style>
+    h4 {
+      margin-bottom: 0%;
+    }
+
     body {
       background-color: #000;
       color: rgb(0, 255, 0) !important;
@@ -57,10 +61,10 @@
     <div id="header">
       <div class="row">
         <div class="one-half column" style="margin-top: 15%">
-          <h4 style="display: inline-block;">❯</h4>
-          <h4 id="blink" style="display: inline-block;"></h4>
+          <h4 style="display: inline-block;">> </h4>
+          <h4 id="welcometypeit" class="whenvisible" style="display: inline-block;" data-callback="welcometypeit"></h4>
 
-          <p>
+          <p style="margin-top: 32pt;">
             I'm a freshman studying Computer Science at Purdue University. My interests lie in Natural Language Processing and High Performance Computing. I'm currently working as a Student Researcher at the Center for Brain-Inspired Computing and a Student HPC Engineer at RCAC. 
           </p>
         </div>
@@ -68,9 +72,9 @@
         <div class="one-half column" style="margin-top: 15%; text-align: center;">
           <img src="./images/IMG_2294.jpeg" alt="me" style="width: 50%; height: 50%; align-self: end;">
 
-          <div>
-            <a class="faa" href="https://github.com/dwijenchawra"><i class="fa-brands fa-github fa-lg"></i></a>
-            <a class="faa" href="https://www.linkedin.com/in/dchawra"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+          <div style="margin-top: 8pt;">
+            <a class="faa" href="https://github.com/dwijenchawra"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a class="faa" href="https://www.linkedin.com/in/dchawra"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
           </div>
 
         </div>
@@ -81,7 +85,10 @@
 
     <div class="row">
       <div class="column">
-        <h4 class="s">What I'm up to</h4>
+        <h4 style="display: inline-block;">> </h4>
+        <h4 id="whatimupto" class="whenvisible" style="display: inline-block;" data-callback="whatimuptotypeit"></h4>
+
+
         <ul>
           <li>
             <h5 class="roletitle">Student Researcher - Center for Brain-Inspired Computing</h5>
@@ -115,7 +122,11 @@
     <!-- create list of projects with pictures -->
     <div class="row">
       <div class="column">
-        <h4>Projects</h4>
+
+        <h4 style="display: inline-block;">> </h4>
+        <h4 id="projtypeit" class="whenvisible" style="display: inline-block;" data-callback="projtypeit"></h4>
+
+
         <ul>
           <li>
             <a href="a.com">CS 180 Networked Application</a>
@@ -135,9 +146,14 @@
         </ul>
       </div>
     </div>
+
+
     <div class="row">
       <div class="column">
-        <h4>Skills</h4>
+
+        <h4 style="display: inline-block;">> </h4>
+        <h4 id="skillstypeit" class="whenvisible" style="display: inline-block;" data-callback="skillstypeit"></h4>
+        
         <ul>
           <li>Python</li>
           <li>Java</li>
@@ -162,9 +178,6 @@
         </ul>
       </div>
     </div>
-    
-    <!-- add javascript animation to the next section about my education -->
-
 
     <!-- columns should be the immediate child of a .row -->
     <div class="row">
@@ -215,13 +228,71 @@
     //   autoStart: true,
     //   callback: function() {}
     // };
-    new TypeIt("#blink", {
-      strings: "Hi, I'm Dwijen ",
-      speed: 100,
-      cursorSpeed: 1500,
-      cursorChar: "▋",
-      loop: false,
-    }).go();
+    var welcome = new TypeIt("#welcometypeit", {
+        strings: "Hi, I'm Dwijen ",
+        speed: 140,
+        cursorSpeed: 1500,
+        cursorChar: "▋",
+        loop: false,
+      }).go();
+    function welcometypeit() {
+      welcome.reset();
+      welcome.go();
+    }
+    
+    var wutimupto = new TypeIt("#whatimupto", {
+        strings: "What I'm up to ",
+        speed: 120,
+        cursorSpeed: 1500,
+        cursorChar: "▋",
+        loop: false,
+      }).go();
+
+    function whatimuptotypeit() {
+      wutimupto.reset();
+      wutimupto.go();
+    }
+
+    var proj = new TypeIt("#projtypeit", {
+        strings: "My Projects ",
+        speed: 120,
+        cursorSpeed: 1500,
+        cursorChar: "▋",
+        loop: false,
+      }).go();  
+    function projtypeit() {
+      proj.reset();
+      proj.go();
+    }
+    var skills = new TypeIt("#skillstypeit", {
+        strings: "My Skills ",
+        speed: 120,
+        cursorSpeed: 1500,
+        cursorChar: "▋",
+        loop: false,
+      }).go();  
+    function skillstypeit() {
+      skills.reset();
+      skills.go();
+    }
+
+
+    
+    //CALLBACKS
+    function callbackRouter(entries, observer) {
+      let entry = entries[0];
+      let target = entry.target;
+      if (entry.intersectionRatio > 0.2) {
+        if (target.dataset.callback) {
+          window[target.dataset.callback]();
+          console.log("running: " + target.dataset.callback);
+        }
+      }
+    }
+    const observer = new IntersectionObserver(callbackRouter);
+    const boxes = document.querySelectorAll('.whenvisible');
+    boxes.forEach(observer.observe.bind(observer));
+
   </script>
 </body>
 
