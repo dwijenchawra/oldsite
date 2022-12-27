@@ -77,8 +77,8 @@
           <img src="./images/IMG_2294.jpeg" alt="me" style="width: 50%; height: 50%; align-self: end;">
 
           <div style="margin-top: 8pt;">
-            <a class="faa" href="https://github.com/dwijenchawra"><i class="fa-brands fa-github fa-2xl"></i></a>
-            <a class="faa" href="https://www.linkedin.com/in/dchawra"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a class="faa" href="https://github.com/dwijenchawra" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a class="faa" href="https://www.linkedin.com/in/dchawra" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
           </div>
 
         </div>
@@ -103,7 +103,7 @@
           <li>
             <h5 class="roletitle">Student HPC Engineer</h5>
             <div class="roledescription">
-              I currently work for <a href="https://www.rcac.purdue.edu">RCAC</a> at Purdue, where I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi">Negishi</a> supercomputer.
+              I currently work for <a href="https://www.rcac.purdue.edu" target="_blank">RCAC</a> at Purdue, where I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi" target="_blank">Negishi</a> supercomputer.
             
             </div>
           </li>
@@ -145,6 +145,22 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="column">
+        <h4 style="display: inline-block;">> </h4>
+        <h4 id="publicationstypeit" class="whenvisible sectionheader" style="display: inline-block;" data-callback="publicationstypeit"></h4>
+
+        <ul>
+          <li>Python</li>
+          <li>Java</li>
+          <li></li>
+          <li>React</li>
+          <li>SQL</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+    </div>
+
 
     <div class="row">
       <div class="column">
@@ -163,41 +179,7 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <h4>Publications</h4>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li></li>
-          <li>React</li>
-          <li>SQL</li>
-          <li>HTML/CSS</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- columns should be the immediate child of a .row -->
-    <div class="row">
-      <div class="one column">One</div>
-      <div class="eleven columns">Eleven</div>
-    </div>
-
-    <!-- just use a number and class 'column' or 'columns' -->
-    <div class="row">
-      <div class="two columns">Two</div>
-      <div class="ten columns">Ten</div>
-    </div>
-
-    <!-- there are a few shorthand columns widths as well -->
-    <div class="row">
-      <div class="one-third column">1/3</div>
-      <div class="two-thirds column">2/3</div>
-    </div>
-    <div class="row">
-      <div class="one-half column">1/2</div>
-      <div class="one-half column">1/2</div>
-    </div>
+    <div style="margin-top: 20%;"></div>
 
   </div>
 
@@ -272,6 +254,17 @@
     function skillstypeit() {
       skills.reset();
       skills.go();
+    }
+    var pub = new TypeIt("#publicationstypeit", {
+        strings: "Publications ",
+        speed: 120,
+        cursorSpeed: 1500,
+        cursorChar: "▋",
+        loop: false,
+      }).go();  
+    function publicationstypeit() {
+      pub.reset();
+      pub.go();
     }
 
 
