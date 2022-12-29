@@ -1,0 +1,66 @@
+:root {
+  font-family: "Times New Roman", monospace, serif !important;
+  --font-stack: "Source Code Pro", monospace, serif !important; 
+}
+
+h3 {
+  margin-bottom: 0em;
+}
+
+.sectionheader {
+  margin-top: 2em;
+}
+
+body {
+  background-color: #000;
+  color: rgb(0, 255, 0) !important;
+  font-size: 16pt;
+}
+
+a {
+  /* background-color: rgba(0, 255, 0, 0.496); */
+  color: rgb(0, 255, 0) !important;
+  text-decoration: underline !important;
+}
+
+.faa {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 255, 0) !important;
+}
+
+a:hover {
+  /* background-color: rgba(0, 255, 0, 0.496); */
+  background-color: rgba(0, 0, 0, 0.0);
+  color: rgb(0, 255, 0) !important;
+  text-decoration: none !important;
+
+}
+
+.roletitle {
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.roledescription {
+  margin-left: 2%;
+}
+
+ul {  
+  list-style-type: none;  
+} 
+
+li {
+  padding-left: 0%;
+}
+
+ul > li::after {
+  content: ""
+}
+
+.nobullets {
+  list-style-type: none;
+}
+
+.one-half {
+  padding-right: 2em;
+}

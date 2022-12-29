@@ -16,55 +16,7 @@
   <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
   <script src="https://kit.fontawesome.com/61eb020609.js" crossorigin="anonymous"></script>
 
-  <style>
-    :root {
-      font-family: "Times New Roman", monospace, serif !important;
-      --font-stack: "Source Code Pro", monospace, serif !important; 
-    }
-    
-    h3 {
-      margin-bottom: 0em;
-    }
-
-    .sectionheader {
-      margin-top: 2em;
-    }
-
-    body {
-      background-color: #000;
-      color: rgb(0, 255, 0) !important;
-      font-size: 16pt;
-    }
-
-    a {
-      /* background-color: rgba(0, 255, 0, 0.496); */
-      color: rgb(0, 255, 0) !important;
-      text-decoration: underline !important;
-    }
-
-    .faa {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(0, 255, 0) !important;
-    }
-
-    a:hover {
-      /* background-color: rgba(0, 255, 0, 0.496); */
-      background-color: rgba(0, 0, 0, 0.0);
-      color: rgb(0, 255, 0) !important;
-      text-decoration: none !important;
-
-    }
-
-    .roletitle {
-      margin-bottom: 1%;
-      margin-top: 2%;
-    }
-
-    .roledescription {
-      margin-left: 2%;
-    }
-    
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -79,7 +31,7 @@
           <h3 id="welcometypeit" class="whenvisible" style="display: inline-block;" data-callback="welcometypeit"></h3>
 
           <p style="margin-top: 32pt;">
-            I'm a freshman studying Computer Science at Purdue University. My interests lie in Natural Language Processing and High Performance Computing. I'm currently working as a Student Researcher at the Center for Brain-Inspired Computing and a Student HPC Engineer at RCAC. 
+            I'm a freshman studying Computer Science at Purdue University. My interests lie in Natural Language Processing and High Performance Computing. I 
           </p>
         </div>
 
@@ -100,26 +52,41 @@
       <div class="column">
         <h3 style="display: inline-block;">> </h3>
         <h3 style="display: inline-block;" class="sectionheader">what i'm up to</h3>
+      </div>
+
+      <div class="one-half column" style="margin-left: 0em;">
+        
         <!-- <h3 id="whatimupto" class="whenvisible sectionheader" style="display: inline-block;" data-callback="whatimuptotypeit"></h3> -->
 
 
+        <ul class="nobullets">
+          <li>
+            <h5 class="roletitle">Student Researcher - <a href="https://engineering.purdue.edu/C-BRIC" target="_blank">Purdue Center for Brain-Inspired Computing</a></h5>
+            <div class="roledescription">
+              Experimenting with spiking neural networks in Pytorch and applying them to sequential data, such as text and audio.
+            </div>
+          </li>
+          <li>
+            <h5 class="roletitle">Student Researcher - <a href="https://datamine.purdue.edu" target="_blank">The Data Mine @ Purdue</a></h5>
+            <div class="roledescription">
+              I have been working with a group of students to compare different hyperparameter optimization techniques for LSTM neural networks. We used Pytorch and Ray Tune to scale training on the Anvil supercomputer.
+            </div>
+          </li>
+          <li>
+            <h5 class="roletitle">Student HPC Engineer - Purdue Rosen Center for Advanced Computing</h5>
+            <div class="roledescription">
+              I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi" target="_blank">Negishi</a> supercomputer at <a href="https://www.rcac.purdue.edu/" target="_blank">RCAC</a>, and currently designing a leak detection system to prevent large outages when a coolant loop fails.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="one-half column" style="margin-left: 0em;">
         <ul>
           <li>
-            <h5 class="roletitle">Student Researcher - Center for Brain-Inspired Computing</h5>
+            <h5 class="roletitle">Student Researcher - <a href="https://www.purdue.edu/impacthub/" target="_blank">Purdue Impact Hub</a></h5>
             <div class="roledescription">
-              Experimenting with spiking neural networks and applying them to sequential data, such as text and audio.
-            </div>
-          </li>
-          <li>
-            <h5 class="roletitle">Student HPC Engineer</h5>
-            <div class="roledescription">
-              I currently work for <a href="https://www.rcac.purdue.edu" target="_blank">RCAC</a> at Purdue, where I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi" target="_blank">Negishi</a> supercomputer. I am also working on a leak detection script to prevent large outages when a coolant loop fails.
-            </div>
-          </li>
-          <li>
-            <h5 class="roletitle">Student Researcher - The Data Mine</h5>
-            <div class="roledescription">
-              I have been working with a group of students to compare different hyperparameter optimization techniques for LSTM neural networks. We have been using Pytorch and Ray Tune to scale training on the Anvil supercomputer.
+              I am working with a group of students to develop a web application to help small businesses in the Lafayette area. We are using React, Node, and MongoDB to build the application.
             </div>
           </li>
         </ul>
@@ -138,16 +105,16 @@
 
         <ul>
           <li>
-            <a href="a.com">CS 180 Networked Application</a>  
+            <a href="projects/cs180project.html">CS 180 Networked Application</a>  
           </li>
           <li>
-            <a href="a.com">Neuron Education</a>
+            <a href="projects/neuron.html">Neuron Education</a>
           </li>
           <li>
-            <a href="b.com">SAT Scraper</a>
+            <a href="projects/satscraper.html">SAT Scraper</a>
           </li>
           <li>
-            <a href="c.com">Programming Club Hunt</a>
+            <a href="progclubhunt">Programming Club Hunt</a>
           </li>
           <li>
             <a href="d.com"></a>
@@ -199,7 +166,6 @@
   <script src="./js/WriteIt.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-
   <script src="https://kit.fontawesome.com/61eb020609.js" crossorigin="anonymous"></script>
 
   <script>
