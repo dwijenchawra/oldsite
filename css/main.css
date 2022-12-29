@@ -60,7 +60,3 @@ ul > li::after {
 .nobullets {
   list-style-type: none;
 }
-
-.one-half {
-  padding-right: 2em;
-}
