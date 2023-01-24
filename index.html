@@ -9,11 +9,9 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/skeleton.css">
-  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
   <script src="https://kit.fontawesome.com/61eb020609.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/main.css">
@@ -25,19 +23,24 @@
   <div class="container">
 
     <div id="header">
-      <div class="row">
-        <div class="one-half column" style="margin-top: 15%">
+      <div class="row" style="margin-top: 15%;">
+        <div class="one-half column">
           <h3 style="display: inline-block;">> </h3>
           <h3 id="welcometypeit" class="whenvisible" style="display: inline-block;" data-callback="welcometypeit"></h3>
 
           <p style="margin-top: 32pt;">
             I'm a freshman studying Computer Science at Purdue University. My interests lie at the junction of Natural Language Processing and High Performance Computing, and aspire to create efficient and effective solutions to human-computer communication in the future.  
           </p>
+
+          <div style="margin-top: 8pt;">
+            <a href="mailto:dchawra@purdue.edu">dwchawra [at] purdue [dot] edu</a>
+          </div>
+
         </div>
 
-        <div class="one-half column" style="margin-top: 15%; text-align: center;">
+        <div class="one-half column" style="text-align: center;">
           <img src="./images/IMG_2294.jpeg" alt="me" style="width: 48%; height: 48%; align-self: end; border-radius: 20px;">
-
+                    
           <div style="margin-top: 8pt;">
             <a class="faa" href="https://github.com/dwijenchawra" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
             <a class="faa" href="https://www.linkedin.com/in/dchawra" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
@@ -49,18 +52,18 @@
 
 
     <div class="row">
-      <div class="column">
-        <h3 style="display: inline-block;">> </h3>
-        <h3 style="display: inline-block;" class="sectionheader">what i'm up to</h3>
-      </div>
+      <!-- <div class="column">
+      </div> -->
 
       <div class="one-half column" style="margin-left: 0em; padding-right: 2em;">
-        
+        <h3 style="display: inline-block;">> </h3>
+        <h3 style="display: inline-block;" class="sectionheader">what i'm up to</h3>
+
         <!-- <h3 id="whatimupto" class="whenvisible sectionheader" style="display: inline-block;" data-callback="whatimuptotypeit"></h3> -->
 
 
         <ul class="nobullets">
-          <li>
+          <li class="experience">
             <h5 class="roletitle">Student Researcher - <a href="https://engineering.purdue.edu/C-BRIC" target="_blank">Purdue Center for Brain-Inspired Computing</a></h5>
             <div class="roledescription">
               Experimenting with spiking neural networks in Pytorch and applying them to sequential data, such as text and audio.
@@ -68,13 +71,13 @@
               <a href="https://github.com/dwijenchawra/dct-snn" target="_blank"><i class="fa-brands fa-github fa-sm" style="padding-right: 1em;"></i>Github Repo</a>
             </div>
           </li>
-          <li>
+          <li class="experience">
             <h5 class="roletitle">Student Researcher - <a href="https://datamine.purdue.edu" target="_blank">The Data Mine @ Purdue</a></h5>
             <div class="roledescription">
               I have been working with a group of students to compare different hyperparameter optimization techniques for LSTM neural networks. We used Pytorch and Ray Tune to scale training on the Anvil supercomputer.
             </div>
           </li>
-          <li>
+          <li class="experience">
             <h5 class="roletitle">Student HPC Engineer - Purdue Rosen Center for Advanced Computing</h5>
             <div class="roledescription">
               I built 2 racks of the new <a href="https://www.rcac.purdue.edu/knowledge/negishi" target="_blank">Negishi</a> supercomputer at <a href="https://www.rcac.purdue.edu/" target="_blank">RCAC</a>, and currently designing a leak detection system to prevent large outages when a coolant loop fails.
@@ -83,8 +86,8 @@
         </ul>
       </div>
 
-      <div class="one-half column" style="margin-left: 0em;">
-        <ul>
+      <!-- <div class="one-half column" style="margin-left: 0em;"> -->
+        <!-- <ul>
           <li>
             <h5 class="roletitle">FitFinder - Purdue HelloWorld 2022 Project</h5>
             <div class="roledescription">
@@ -103,53 +106,65 @@
             </div>
           </li>
         </ul>
-      </div>
+      </div> -->
+
+        <div class="one-half column">
+          <h3 style="display: inline-block;">> </h3>
+          <h3 style="display: inline-block;" class="sectionheader">
+            <a href="projects.html">projects</a>
+          </h3>
+
+        
+          <ul>
+            <li>
+              <a href="projects/soundscape.html">Soundscape</a> - Boilermake X  
+            </li>
+            <li>
+              <a href="projects/fitfinder.html">FitFinder</a> - Hello World 2022
+            </li>
+            <li>
+              <a href="projects/cs180project.html">CS 180 Networked Application</a>  
+            </li>
+            <li>
+              <a href="projects/neuron.html">Neuron Education</a>
+            </li>
+            <li>
+              <a href="projects/satscraper.html">SAT Scraper</a>
+            </li>
+            <li>
+              <a href="progclubhunt">Programming Club Hunt</a>
+            </li>
+          </ul>
+
+          <h3 style="display: inline-block;">> </h3>
+          <h3 style="display: inline-block;" class="sectionheader">publications</h3>
+          <!-- <h3 id="publicationstypeit" class="whenvisible sectionheader" style="display: inline-block;" data-callback="publicationstypeit"></h3> -->
+          
+          <!-- add dashes to list -->
+
+          <ul style="list-style: symbols('-');">
+            <li class="publications">
+              Weed, L., Lok, R., <b>Chawra, D.</b>, &amp; Zeitzer, J. (2022). The impact of missing data and imputation methods on the analysis of 24-hour activity patterns. Clocks &amp; Sleep, 4(4), 497–507. <a href="https://doi.org/10.3390/clockssleep4040039" target="_blank">https://doi.org/10.3390/clockssleep4040039</a>
+            </li>
+            <li>
+              Lok, R., <b>Chawra, D.</b>, Hon, F., Ha, M., Kaplan, K. A., &amp; Zeitzer, J. M. (2022). Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness. Biological Psychology, 170, 108290. <a href="https://doi.org/10.1016/j.biopsycho.2022.108290" target="_blank">https://doi.org/10.1016/j.biopsycho.2022.108290</a>
+            </li>
+          </ul>
+
+        </div>
+          
+
+
     </div>
 
     <!-- create list of projects with pictures -->
     <div class="row">
-      <div class="one-third column">
-
-        <h3 style="display: inline-block;">> </h3>
-        <h3 style="display: inline-block;" class="sectionheader">
-          <a href="projects.html">projects</a>
-        </h3>
-
-
-        <ul>
-          <li>
-            <a href="projects/cs180project.html">CS 180 Networked Application</a>  
-          </li>
-          <li>
-            <a href="projects/neuron.html">Neuron Education</a>
-          </li>
-          <li>
-            <a href="projects/satscraper.html">SAT Scraper</a>
-          </li>
-          <li>
-            <a href="progclubhunt">Programming Club Hunt</a>
-          </li>
-          <li>
-            <a href="d.com"></a>
-          </li>
-        </ul>
-      </div>
+      
     <!-- </div>
 
     <div class="row"> -->
-      <div class="two-thirds column">
-        <h3 style="display: inline-block;">> </h3>
-        <h3 style="display: inline-block;" class="sectionheader">publications</h3>
-        <!-- <h3 id="publicationstypeit" class="whenvisible sectionheader" style="display: inline-block;" data-callback="publicationstypeit"></h3> -->
-
-        <ul>
-          <li>
-            Weed, L., Lok, R., <b>Chawra, D.</b>, &amp; Zeitzer, J. (2022). The impact of missing data and imputation methods on the analysis of 24-hour activity patterns. Clocks &amp; Sleep, 4(4), 497–507. <a href="https://doi.org/10.3390/clockssleep4040039" target="_blank">https://doi.org/10.3390/clockssleep4040039</a>
-          </li>
-          <li>
-            Lok, R., <b>Chawra, D.</b>, Hon, F., Ha, M., Kaplan, K. A., &amp; Zeitzer, J. M. (2022). Objective underpinnings of self-reported sleep quality in middle-aged and older adults: The importance of N2 and wakefulness. Biological Psychology, 170, 108290. <a href="https://doi.org/10.1016/j.biopsycho.2022.108290" target="_blank">https://doi.org/10.1016/j.biopsycho.2022.108290</a>
-          </li>
-        </ul>
+      <div class="one-half column">
+        
       </div>
     </div>
 
