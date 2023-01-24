@@ -21,6 +21,7 @@ h5 {
 
 .sectionheader {
   margin-top: 2em;
+  margin-bottom: 0.5em;
 }
 
 body {
@@ -49,7 +50,6 @@ a:hover {
 
 .roletitle {
   margin-bottom: 1%;
-  margin-top: 2%;
 }
 
 .roledescription {
@@ -78,4 +78,5 @@ ul > li::after {
 
 .publications {
   margin-bottom: 3rem;
+  margin-left: 35pt;
 }
