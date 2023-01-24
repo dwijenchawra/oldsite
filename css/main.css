@@ -14,6 +14,11 @@ h3 {
   font-weight: 900;
 }
 
+h5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 .sectionheader {
   margin-top: 2em;
 }
